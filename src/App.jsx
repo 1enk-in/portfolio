@@ -103,6 +103,9 @@ function App() {
         className="min-h-screen flex flex-col md:flex-row items-center justify-center theme-bg theme-text p-10 gap-16 pt-24 relative z-10"
       >
         <div className="flex-1 max-w-xl space-y-8 text-center md:text-left">
+          <div className="profile-container" onClick={toggleModal}>
+          <img src={profilePic} alt="Profile" className="profile-image" />
+        </div>
           <div className="typing-position">
             <RainbowTyping />
           </div>
@@ -138,9 +141,7 @@ function App() {
             ))}
           </div>
         </div>
-        <div className="profile-container" onClick={toggleModal}>
-          <img src={profilePic} alt="Profile" className="profile-image" />
-        </div>
+        
       </div>
 
       {/* Modal for profile image */}

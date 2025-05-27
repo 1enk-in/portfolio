@@ -62,8 +62,8 @@ body.dark-theme {
 
 .profile-container {
   position: relative;
-  top: -235px;
-    left: -270px;
+    top: 395px;
+    left: -60px;
   width: 250px;
   height: 260px;
   cursor: pointer;
@@ -973,8 +973,8 @@ body.dark-theme header {
 
 .text-center {
   position: relative;
-  top: 80px;
-  font-size: 50px;
+  top: -200px;
+    font-size: 50px;
   left: -20px;
   text-shadow: 1px 1px 2px #000;
 }
