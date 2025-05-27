@@ -1,0 +1,376 @@
+.projects-grid {
+  position: relative;
+  top: 75px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8rem;
+  justify-content: center;
+}
+
+.text2-center {
+    position: relative;
+    top: 55px;
+    font-size: 52px;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.project-card {
+  position: relative;
+  width: 270px;
+  perspective: 800px;
+  border: 2px solid transparent;
+  border-radius: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Only the inner section tilts */
+.card-tilt {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  min-height: 320px;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.project-card:hover .card-tilt {
+  transform: rotateX(40deg) scale(1.02);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  border-color: #8a6efb; /* Purple border on hover */
+  box-shadow: 0 0 10px #8a6efb80; /* Optional glowing effect */
+}
+
+.card-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-image {
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+  width: 100%;
+}
+
+/* FLOATING LINK + BEAM */
+.hover-link {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.project-card:hover .hover-link {
+  opacity: 1;
+}
+
+.hover-link-text {
+  position: relative;
+  top: 40px;
+  background: #000;
+  color: #fff;
+  font-family: monospace;
+  font-size: 0.9rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  box-shadow: 0 0 10px #00f0ff;
+}
+
+.hover-beam-wrapper {
+  position: absolute;
+  top: 65px;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.hover-beam {
+  width: 6px;
+  height: 130px;
+  background: linear-gradient(to bottom, #00f0ff 0%, #00f0ff88 60%, transparent 100%);
+  clip-path: polygon(50% 0%, 60% 10%, 65% 30%, 70% 60%, 80% 100%, 20% 100%, 30% 60%, 35% 30%, 40% 10%);
+  animation: beamPulse 1.5s infinite;
+}
+
+.hover-beam-glow {
+  position: absolute;
+  top: 125px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 160px;
+  height: 60px;
+  pointer-events: none;
+}
+
+.hover-beam-glow .ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  filter: blur(6px);
+  animation: glowSpreadWave 2s infinite ease-in-out;
+  background: radial-gradient(ellipse at center, #00f0ff33 0%, #00f0ff11 40%, transparent 70%);
+  opacity: 0.5;
+}
+
+.hover-beam-glow .ring:nth-child(2) {
+  animation-delay: 0.6s;
+  opacity: 0.3;
+  filter: blur(8px);
+  width: 140px;
+  height: 50px;
+  left: 10px;
+  top: 5px;
+}
+
+.hover-beam-glow .ring:nth-child(3) {
+  animation-delay: 1.2s;
+  opacity: 0.2;
+  filter: blur(10px);
+  width: 180px;
+  height: 70px;
+  left: -10px;
+  top: -5px;
+}
+
+@keyframes glowSpreadWave {
+  0%, 100% {
+    transform: scaleX(0.8) scaleY(0.6);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scaleX(1.2) scaleY(1);
+    opacity: 0.5;
+  }
+}
+
+
+/* Content styles */
+.card-content {
+  padding: 2.5rem;
+  text-align: left;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-desc {
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.tech-icons {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tech-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  filter: brightness(1.2);
+}
+
+.live-link {
+  font-family: monospace;
+  color: #00ffae;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.live-link:hover {
+  color: #00ffd5;
+}
+
+
+/* View More Button */
+.view-more-wrapper {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.view-more-btn {
+  position: relative;
+  top: 100px;
+  left: 5px;
+  background: #71717138;
+  border: 2px solid #8a6efb;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 40px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgb(138 110 251 / 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.view-more-btn:hover {
+  background: #6f54c9;
+}
+
+/* --- Modal Styles --- */
+
+.modal3-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 20, 20, 0.85);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.modal3-content {
+  background: rgba(30, 30, 30, 0.95);
+  border-radius: 16px;
+  max-width: 90vw;
+  max-height: 95vh;
+  width: 1000px;
+  padding: 2rem 2.5rem;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 0 20px rgb(138 110 251 / 0.7);
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar styling for modal */
+.modal3-content::-webkit-scrollbar {
+  width: 10px;
+}
+
+.modal3-content::-webkit-scrollbar-track {
+  background: #2c2c2c;
+  border-radius: 8px;
+}
+
+.modal3-content::-webkit-scrollbar-thumb {
+  background: #8a6efb;
+  border-radius: 8px;
+  border: 2px solid #2c2c2c;
+}
+
+.modal3-content::-webkit-scrollbar-thumb:hover {
+  background: #6f54c9;
+}
+
+/* Firefox scrollbar */
+@-moz-document url-prefix() {
+  .modal3-content {
+    scrollbar-width: thin;
+    scrollbar-color: #8a6efb #2c2c2c;
+  }
+}
+
+/* Modal Close Button */
+.modal3-close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #717171b5;
+  border: 2px solid #8a6efb;
+  color: white;
+  font-size: 2rem;
+  font-weight: 900;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgb(138 110 251 / 0.8);
+  transition: background-color 0.3s ease;
+}
+
+.modal3-close-btn:hover {
+  background: #6f54c9;
+}
+
+/* Modal title */
+.modal3-title {
+  position: relative;
+    top: 190px;
+    right: -100px;
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 0rem;
+    color: #ddd;
+    text-align: center;
+    transform: rotate(270deg);
+    transform-origin: left top;
+    white-space: nowrap;
+}
+
+/* Modal grid overrides */
+.modal3-grid {
+  height: calc(95vh - 100px);
+  right: calc(25vh - 100px);
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 2 cards per row */
+  gap: 2.5rem; /* spacing between cards */
+  padding: 3rem 9rem 12rem 9rem;
+  will-change: transform;
+  contain: layout paint;
+}
+
+.modal3-grid {
+  scrollbar-width: none;            /* Firefox */
+  -ms-overflow-style: none;         /* IE 10+ */
+}
+
+.modal3-grid::-webkit-scrollbar {
+  display: none;                    /* Chrome, Safari, Edge */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 720px) {
+  .modal3-content {
+    width: 95vw;
+    padding: 1.5rem;
+  }
+  .project-card {
+    border-radius: 12px;
+  }
+  .card-image-container {
+    height: 140px;
+  }
+  .modal3-title {
+    font-size: 1.5rem;
+  }
+  .view-more-btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Smooth transitions for modal-content */
+.modal3-content {
+  transition: all 1.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+  will-change: top, left, width, height, border-radius, opacity;
+}
+
+/* Overlay fade in/out */
+.modal3-overlay {
+  transition: opacity 600ms ease-in-out;
+}
+
+/* Button and other existing styles you already have remain unchanged */

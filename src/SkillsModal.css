@@ -1,0 +1,137 @@
+.skills-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 10, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.skills-modal {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  max-width: 700px;
+  width: 90%;
+  color: white;
+  position: relative;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  animation: scaleIn 0.3s ease-in-out;
+}
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #7e22ce;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.close-button:hover {
+  transform: rotate(90deg) scale(1.1);
+  background: #9333ea;
+}
+
+.modal-title {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 2.5rem;
+  font-weight: bold;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+}
+
+.skill-icon {
+  font-size: 2.5rem;
+  color: #aaa;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.skill-icon:hover {
+  color: #38bdf8; /* Tailwind blue-400 */
+  transform: translateY(-8px) scale(1.1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.95); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+.skill-icon {
+  position: relative;
+  font-size: 2.5rem;
+  color: #aaa;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-icon:hover {
+  color: #38bdf8; /* Tailwind blue-400 */
+  transform: translateY(-8px) scale(1.1);
+}
+
+/* Hide skill name by default */
+.skill-name {
+  font-size: 0.75rem;
+  color: #38bdf8;
+  margin-top: 0.25rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* so it doesn't interfere with hover */
+}
+
+/* Show skill name on hover */
+.skill-icon:hover .skill-name {
+  opacity: 1;
+}
+
+.skill-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+  color: white;
+  cursor: pointer;
+}
+
+.skill-icon-svg {
+  font-size: 2rem;
+  color: gray;
+  transition: color 0.3s ease;
+}
+
+.skill-icon:hover .skill-icon-svg {
+  color: var(--icon-color);
+}
+
+.skill-name {
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+  color: white;
+}

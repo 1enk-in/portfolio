@@ -1,0 +1,177 @@
+.about-section {
+  position: absolute;
+    top: 60px;
+    left: 900px;
+    font-size: 54px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 0rem;
+    position: relative;
+    top: 140px;
+    right: 0px;
+    width: 1515px;
+    height: 535px;
+}
+
+.about-image-box {
+  position: relative;
+    top: -90px;
+    left: 15px;
+    width: 568px;
+    height: 385px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.about-profile-img {
+  position: relative;
+    top: 0px;
+    left: 0px;
+    width: 568px;
+    height: 385px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.about-text-box {
+  position: relative;
+    top: 25px;
+    right: 10px;
+    color: white;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 6px;
+    padding: 1rem;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.about-text-box p {
+  margin-bottom: 1rem;
+}
+
+.about-text-box strong {
+  color: #a78bfa;
+  font-weight: 600;
+}
+
+.about-buttons {
+ position: relative;
+    right: 715px;
+    top: -40px;
+    display: flex;
+    gap: 1.25rem;
+    margin-top: 0;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.btn {
+  padding: 0.65rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.9rem;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  user-select: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  /* subtle text shadow for depth */
+  text-shadow: 0 1px 2px rgba(0,0,0,0.25);
+}
+
+/* Resume button: gradient background with subtle shadow */
+.resume {
+  background: linear-gradient(135deg, #3b82f6, #9333ea);
+  box-shadow: 0 6px 15px rgba(59, 130, 246, 0.6);
+  border-color: #9333ea;
+}
+
+.resume:hover {
+  background: linear-gradient(135deg, #4f9dff, #a25aea);
+  box-shadow: 0 8px 20px rgba(79, 157, 255, 0.75);
+  transform: scale(1.1);
+  opacity: 1;
+  border-color: #7c22d9;
+}
+
+/* Skills button: purple glass style */
+.skills {
+  background: rgba(147, 51, 234, 0.3);
+  border: 2px solid #9333ea;
+  color: #e0d7f7;
+  box-shadow: 0 4px 12px rgba(147, 51, 234, 0.4);
+}
+
+.skills:hover {
+  background: rgba(147, 51, 234, 0.6);
+  box-shadow: 0 6px 18px rgba(147, 51, 234, 0.7);
+  transform: scale(1.08);
+  border-color: #7c22d9;
+  color: white;
+}
+
+/* Contact button: dark glass style */
+.contact {
+  background: rgba(45, 45, 45, 0.6);
+  border: 2px solid #555;
+  color: #ddd;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.contact:hover {
+  background: rgba(45, 45, 45, 0.9);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+  transform: scale(1.07);
+  border-color: #888;
+  color: white;
+}
+
+/* General hover for all buttons */
+.btn:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+/* Focus style for accessibility */
+.btn:focus-visible {
+  outline: 2px solid #9333ea;
+  outline-offset: 2px;
+}
+
+
+/* Responsive layout */
+@media (min-width: 768px) {
+  .about-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  .about-text-box {
+    text-align: left;
+  }
+}
+
+

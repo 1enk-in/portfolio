@@ -1,0 +1,218 @@
+.work-section {
+  background-color: #12121200;
+  color: white;
+  min-height: 100vh;
+}
+
+.text-center2 {
+  position: relative;
+  top: 60px;
+  font-size: 50px;
+  left: 390px;
+  text-shadow: 1px 1px 2px #000;
+}
+
+/* Timeline container */
+.timeline {
+  position: relative;
+  top: 100px;
+  left: 15px;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  padding: 2rem 0;
+  overflow: visible;
+  /* For spacing and horizontal layout */
+}
+
+/* The horizontal beam */
+.timeline-beam {
+  position: absolute;
+  top: 50%;
+  left: -230px;
+  height: 4px;
+  background: linear-gradient(90deg, #7e22ce, #a855f7, #c084fc);
+  width: 0%;
+  border-radius: 2px;
+  transform: translateY(-50%);
+  transition: width 2s ease-out;
+  z-index: 1;
+}
+
+/* Glowing tip ball */
+.timeline-beam::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  background: radial-gradient(circle, #e9d5ff 30%, #c084fc 70%);
+  border-radius: 50%;
+  transform: translate(50%, -50%);
+  box-shadow:
+    0 0 6px rgba(192, 132, 252, 0.6),
+    0 0 12px rgba(192, 132, 252, 0.4),
+    0 0 20px rgba(168, 85, 247, 0.3);
+}
+
+
+
+
+/* Work cards */
+.work-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 12px;
+  width: 300px;
+  height: 230px;
+  padding: 1.5rem;
+  text-align: center;
+  position: relative;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  z-index: 2;
+}
+
+/* Show card when visible */
+.work-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover effect */
+.work-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(168, 85, 247, 0.3);
+  border-color: rgba(168, 85, 247, 0.6);
+  background: rgba(255, 255, 255, 0.12);
+  cursor: pointer;
+}
+
+.work-logo {
+  height: 40px;
+  margin-bottom: 1rem;
+  object-fit: contain;
+}
+
+
+.job-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.company-name {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 0.25rem;
+}
+
+.job-duration {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-bottom: 1rem;
+}
+
+.expand2-btn {
+  position: absolute;
+  bottom: 2rem;
+  right: 10rem;
+  width: 32px;
+  height: 32px;
+  background-color: #7e22ce;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.expand2-btn:hover {
+  background-color: #6b21a8;
+}
+
+/* Modal styles */
+.modal2-overlay {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.60); /* Desired final background */
+  backdrop-filter: blur(8px);
+  cursor: zoom-out;
+  inset: 0;
+
+  /* Start transparent and fade in smoothly */
+  opacity: 0;
+  animation: overlayFadeIn 0.4s ease forwards;
+}
+
+@keyframes overlayFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.modal2-content {
+  background: #1f1f1f;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 400px;
+  color: white;
+  position: relative;
+  box-shadow: 0 0 15px rgba(126, 34, 206, 0.7);
+}
+
+.close2-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #7e22ce;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.modal2-logo {
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.modal2-title {
+  margin-bottom: 0.25rem;
+  font-size: 1.5rem;
+}
+
+.modal2-company {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 0.5rem;
+}
+
+.modal2-duration {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 1rem;
+}
+
+.modal2-description {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+

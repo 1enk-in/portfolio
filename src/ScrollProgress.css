@@ -1,0 +1,28 @@
+.scroll-progress-metal {
+  position: fixed;
+  bottom: 10px;
+  left: 20px;
+  z-index: 1000;
+  font-size: 1.5rem;
+  font-family: 'Orbitron', monospace; /* Use a sci-fi-like font */
+  letter-spacing: 1px;
+  pointer-events: none;
+  user-select: none;
+  color: #d1d1d1;
+  background: linear-gradient(
+    145deg,
+    #e3e3e3 0%,
+    #c7c7c7 20%,
+    #a0a0a0 40%,
+    #b4b4b4 60%,
+    #ffffff 80%,
+    #dddddd 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow:
+    0 0 2px #aaa,
+    0 0 4px #fff,
+    1px 1px 1px rgba(0, 0, 0, 0.4);
+  transition: opacity 0.3s ease;
+}

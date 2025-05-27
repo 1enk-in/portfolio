@@ -1,0 +1,32 @@
+/* Glow behind card */
+.glow-bg {
+  background: linear-gradient(135deg, rgba(129, 140, 248, 0.7), rgba(139, 92, 246, 0.7), rgba(124, 58, 237, 0.7));
+  filter: blur(30px);
+  transform: scale(1.1) rotate(-6deg);
+  z-index: -1;
+  opacity: 0.8;
+  border-radius: 24px;
+}
+
+/* Glass card styling */
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow:
+    0 8px 32px 0 rgba(31, 38, 135, 0.37),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+/* Smooth max-height transition for expandable content */
+.transition-max-height {
+  transition-property: max-height;
+}
+
+/* Make sure overflow is hidden when closed */
+.overflow-hidden {
+  overflow: hidden;
+}
