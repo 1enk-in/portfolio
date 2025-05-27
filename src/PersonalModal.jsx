@@ -20,12 +20,6 @@ const sliderData = [
     description: 'I enjoy playing guitar and piano. Music is my second language.'
   },
   {
-    title: 'Fitness',
-    subtitle: 'Sports, Gym',
-    image: '/images/fitness.jpg',
-    description: 'Staying fit is part of my routine. I love running and gym.'
-  },
-  {
     title: 'Books',
     subtitle: 'Fiction Novels',
     image: '/images/books.jpg',
@@ -137,8 +131,8 @@ const PersonalModal = () => {
               </div>
 
               <div className="personal-hobbies">
-                <h2>Aara's Hobbies</h2>
-                <section className="hobby-block">
+                <h2>1enk's Hobbies</h2>
+                {/* <section className="hobby-block">
                   <h3>Morning Run</h3>
                   <p>Running gives me peace (⊗`◟´⊗), plus fitness & swimming.</p>
                 </section>
@@ -157,9 +151,9 @@ const PersonalModal = () => {
                       className="bali-image"
                     />
                   ))}
-                </section>
+                </section> */}
 
-                <section className="hobby-block">
+                {/* <section className="hobby-block">
                   <h3>Music Enthusiast</h3>
                   <p>I play guitar and piano and share tunes online (❁´◡`❁)</p>
                 </section>
@@ -167,12 +161,12 @@ const PersonalModal = () => {
                 <section className="hobby-block">
                   <h3>Dream of Becoming a Polyglot</h3>
                   <p>Learning Japanese now. Next: German. Maybe all! []~(￣▽￣)~*</p>
-                </section>
+                </section> */}
               </div>
 
               {/* Slider Section */}
               <div className="slider-section">
-                <h2>Components of Aara's Life</h2>
+                <h2>Components of 1enk's Life</h2>
                 <Swiper
                   slidesPerView={2}
                   spaceBetween={15}

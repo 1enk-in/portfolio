@@ -5,52 +5,53 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import './index.css';
+import GGCImage from './images/ggc.jpeg';
 
 const certifications = [
   {
-    title: 'Artificial Intelligence Foundations',
-    issuer: 'nasscom FutureSkills',
-    date: 'Aug 2021',
-    image: '/images/nasscom.png',
-    url: 'https://example.com/ai-foundations',
+    title: 'GGC/PTA',
+    issuer: 'VirtualGGC',
+    date: 'Aug 2024',
+    image: GGCImage,
+    url: 'https://example.com/',
   },
   {
-    title: 'Front-End Web Development',
-    issuer: 'The Hong Kong University of Science and Technology',
-    date: 'March 2020',
+    title: 'Ms-Office',
+    issuer: 'AAA Foundation',
+    date: 'March 2022',
     image: '/images/hkust.png',
-    url: 'https://example.com/frontend-cert',
+    url: 'https://example.com/',
   },
   {
-    title: 'Statistics',
-    issuer: 'University of Amsterdam',
-    date: 'Jan 2020',
+    title: 'Art Warrior',
+    issuer: 'Modi-ji',
+    date: 'Jan 2023',
     image: '/images/amsterdam.png',
-    url: 'https://example.com/statistics-cert',
+    url: 'https://example.com/',
   },
   {
     id: 4,
-    title: "hhu Certification",
-    issuer: "Placeholder University",
-    date: "Jan 2025",
+    title: "RSP",
+    issuer: "Vidya mandir",
+    date: "Jan 2016",
     image: "/certificates/placeholder.png",
-    url: "#",
+    url: "https://example.com/",
   },
   {
     id: 5,
     title: "Dummy Certification",
-    issuer: "Placeholder University",
+    issuer: "pangau",
     date: "Jan 2025",
     image: "/certificates/placeholder.png",
-    url: "#",
+    url: "https://example.com/",
   },
   {
     id: 6,
-    title: "55555 Certification",
-    issuer: "Placeholder University",
+    title: "Kya Pata Certification",
+    issuer: "phodaaa",
     date: "Jan 2025",
     image: "/certificates/placeholder.png",
-    url: "#",
+    url: "https://example.com/",
   }
 ];
 

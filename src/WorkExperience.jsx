@@ -5,26 +5,26 @@ const workData = [
   {
     id: 1,
     logo: '/images/company1.png',
-    title: 'Frontend Developer',
-    company: 'TechCorp Solutions',
-    duration: 'Jan 2023 - Present',
-    description: 'Developed scalable React.js interfaces and collaborated with backend team for seamless API integrations. Improved performance by 25%.',
+    title: 'GGC/PTA Intern',
+    company: 'VirtualGGC',
+    duration: 'Aug 2024 - Jan 2025',
+    description: 'GGC/PTA internship for financial management, worked 4 for months as an intern and for last 2 month idle.',
   },
   {
     id: 2,
     logo: '/images/company2.png',
-    title: 'UI/UX Intern',
+    title: 'Backlabs UI Designs',
     company: 'DesignHub Inc.',
-    duration: 'Jun 2022 - Dec 2022',
+    duration: 'Jun 2023 - Dec 2023',
     description: 'Worked on mobile-first UI design for startup dashboard. Created interactive Figma prototypes and collaborated with frontend team.',
   },
   {
     id: 3,
     logo: '/images/company3.png',
-    title: 'Junior Developer',
-    company: 'WebStart LLC',
-    duration: 'Jan 2021 - May 2022',
-    description: 'Assisted in building responsive websites and improving UI performance using React and CSS.',
+    title: 'Telecom',
+    company: 'TeleCallcenter',
+    duration: 'Apr 2023 - May 2023',
+    description: 'TeleCallcenter Employee, chutiya company, say no to call center.',
   }
 ];
 

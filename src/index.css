@@ -1242,3 +1242,143 @@ body.dark-theme header {
 
 
 
+/* KEEP ALL YOUR EXISTING STYLES HERE ABOVE */
+
+/* ------------------------- */
+/* Responsive adjustments    */
+/* ------------------------- */
+
+/* Mobile phones (<= 600px) */
+@media (max-width: 600px) {
+  #home {
+    flex-direction: column !important;
+    align-items: center;
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .profile-container {
+    width: 150px !important;
+    height: 150px !important;
+    margin: 0 auto;
+  }
+
+  .profile-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .custom-heading {
+    font-size: 1.5rem !important;
+    text-align: center;
+  }
+
+  .custom-heading2 {
+    font-size: 1.25rem !important;
+    text-align: center;
+  }
+
+  .theme-text {
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .headerbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .education-entry,
+  .experience-card,
+  .project-card {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+
+  .timeline-container {
+    overflow-x: auto;
+    padding-bottom: 1rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+
+  .contact-form {
+    width: 100% !important;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}
+
+/* Tablets (<= 900px) */
+@media (max-width: 900px) {
+  #home {
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .profile-container {
+    width: 200px !important;
+    height: 200px !important;
+    margin: 0 auto;
+  }
+
+  .custom-heading {
+    font-size: 2rem !important;
+    text-align: center;
+  }
+
+  .custom-heading2 {
+    font-size: 1.5rem !important;
+    text-align: center;
+  }
+
+  .theme-text {
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .education-entry,
+  .experience-card,
+  .project-card {
+    width: 95% !important;
+    margin: 0 auto;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 2rem;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

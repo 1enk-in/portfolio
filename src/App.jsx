@@ -64,8 +64,8 @@ function App() {
     { icon: <FaGithub />, url: 'https://github.com/Navedkhan05' },
     { icon: <FaTelegram />, url: 'https://t.me/anpadbihari' },
     { icon: <FaEnvelope />, url: 'mailto:naved3841@gmail.com' },
-    { icon: <FaLink />, url: 'https://linktr.ee/yourprofile' },
-    { icon: <FaLinkedin />, url: 'https://linkedin.com/in/yourprofile' },
+    { icon: <FaLink />, url: 'https://linktr.ee/navved' },
+    { icon: <FaLinkedin />, url: 'https://www.linkedin.com/in/naved-khan-7a364620a' },
   ];
   
 
@@ -113,7 +113,7 @@ function App() {
           </h1>
 
           <a
-            href="/YourCV.pdf"
+            href="https://docs.google.com/document/d/162O-rq67m9sLyYa3Y0lXjyy9vWIZPgdTLfbXwKsR5ZY/edit?usp=sharing"
             download
             className="custom-heading4 text-gray-900 dark:text-white transition duration-300"
           >
