@@ -22,20 +22,24 @@ export default function About() {
 
         <div data-aos="slide-up" data-aos-delay="100" className="about-text-box">
           <p>
-            Hello! I’m Naved — or <strong>1enk</strong> online. Based in Mumbai, I graduated with a BAF degree and have a solid grip on Accounting, Finance, and tools like <strong>Excel</strong>, <strong>Power BI</strong>, <strong>Tally</strong>, and <strong>MySQL</strong>.
+            Hello! I’m FAIZ — or <strong>Ziaf</strong> online. Based in Mumbai, I graduated with a BAF degree and have a solid grip on Accounting, Finance, and tools like <strong>Excel</strong>, <strong>Power BI</strong>, <strong>Tally</strong>, and <strong>MySQL</strong>.
           </p>
           <p>
-            Despite not coming from a technical background, I taught myself <strong>HTML</strong>, <strong>CSS</strong>, <strong>Java</strong>, <strong>Python</strong>, <strong>React</strong>, and <strong>Tailwind</strong> through projects, curiosity, and hands-on learning. I’m not a full-fledged developer (yet), but I love creating tangible, human-focused solutions and experimenting with what works.
+            I enjoy learning how businesses work and how financial decisions are made.
+I have studied subjects like Cost Accounting, Financial Management, and Taxation which helped me build a strong base.
           </p>
           <p>
-            Outside of that? Big-time gamer (Assassin’s Creed, Sekiro), music nerd (from RnB to metal), and total movie junkie. I live for <strong>late-night Street-Foods</strong>, fiction books, and weird “what if…” convos that spiral into time travel theories.
+            Right now, I am pursuing <strong>US CPA</strong> to improve my knowledge and grow in the accounting field.
           </p>
           <p>
-            I don’t have life figured out, and that’s okay. I like building, testing, and navigating the chaos of creation — because <strong>life’s messy, and that’s where the magic is.</strong>
-          </p>
+          In my free time, I like learning new things, exploring technology, and improving my skills.
+          </p> 
+          <p>
+            In the future, I want to build a successful career in accounting and achieve something meaningful in life.
+           </p>
 
           <div data-aos="fade-up" data-aos-delay="100" className="about-buttons">
-            <a href="/resume.pdf" className="btn resume" target="_blank" rel="noopener noreferrer">
+            <a href="https://drive.google.com/file/d/1gb8HsjDQdOfAVWaQdIQMjNdNi1ueGULP/view" className="btn resume" target="_blank" rel="noopener noreferrer">
               Resume
             </a>
             <button className="btn skills" onClick={() => setShowSkillsModal(true)}>

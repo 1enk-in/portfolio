@@ -47,7 +47,7 @@ export default function SkillsModal({ show, onClose }) {
     <div className="skills-modal-overlay" onClick={onClose}>
       <div className="skills-modal" onClick={(e) => e.stopPropagation()}>
         <button className="close-button" onClick={onClose} aria-label="Close Skills Modal">
-          <IoClose size={24} />
+          <IoClose className='buttoncross' size={24} />
         </button>
         <h3 className="modal-title">My Skills</h3>
         <div className="skills-grid">

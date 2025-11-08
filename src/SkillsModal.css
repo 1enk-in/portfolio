@@ -40,8 +40,13 @@
 }
 
 .close-button:hover {
-  transform: rotate(90deg) scale(1.1);
   background: #9333ea;
+}
+
+.buttoncross {
+  position: absolute;
+  right: 3px;
+  top: 6px;
 }
 
 .modal-title {

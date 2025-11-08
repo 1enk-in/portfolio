@@ -6,6 +6,9 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import './index.css';
 import GGCImage from './images/ggc.jpeg';
+import msImage from './images/msoffice.jpg';
+import rspImage from './images/rsp.png';
+import NISMImage from './images/nism.png';
 
 const certifications = [
   {
@@ -19,38 +22,21 @@ const certifications = [
     title: 'Ms-Office',
     issuer: 'AAA Foundation',
     date: 'March 2022',
-    image: '/images/hkust.png',
+    image: msImage,
     url: 'https://example.com/',
   },
   {
-    title: 'Art Warrior',
-    issuer: 'Modi-ji',
-    date: 'Jan 2023',
-    image: '/images/amsterdam.png',
-    url: 'https://example.com/',
-  },
-  {
-    id: 4,
     title: "RSP",
     issuer: "Vidya mandir",
     date: "Jan 2016",
-    image: "/certificates/placeholder.png",
+    image: rspImage,
     url: "https://example.com/",
   },
   {
-    id: 5,
-    title: "Dummy Certification",
-    issuer: "pangau",
-    date: "Jan 2025",
-    image: "/certificates/placeholder.png",
-    url: "https://example.com/",
-  },
-  {
-    id: 6,
-    title: "Kya Pata Certification",
-    issuer: "phodaaa",
-    date: "Jan 2025",
-    image: "/certificates/placeholder.png",
+    title: "NISM",
+    issuer: "Securities and Exchange Board of india",
+    date: "Apr 2025",
+    image: NISMImage,
     url: "https://example.com/",
   }
 ];

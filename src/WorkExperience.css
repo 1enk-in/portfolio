@@ -216,3 +216,26 @@
   line-height: 1.4;
 }
 
+.work-logo {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* Smooth one-way reveal */
+.work-card {
+  transform: translateY(12px);
+  opacity: 0;
+  transition: transform 300ms ease, opacity 300ms ease;
+  will-change: transform, opacity;
+}
+.work-card.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.timeline-beam { will-change: width; }

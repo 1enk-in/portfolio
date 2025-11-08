@@ -71,10 +71,10 @@ body.dark-theme {
 
 .profile-image {
   position: relative;
-  top: 0px;
+  top: -10px;
   left: 0px;
   width: 250px;
-  height: 260px;
+  height: 285px;
   object-fit: cover;
   border-radius: 20px; /* Curved square */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -137,7 +137,7 @@ body.dark-theme {
   font-style: bold;
   position: relative;
   top: 55px;
-    right: -125px;
+    right: -85px;
   letter-spacing: 3px;
 }
 

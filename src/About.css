@@ -31,10 +31,10 @@
 
 .about-profile-img {
   position: relative;
-    top: 0px;
+    top: -5px;
     left: 0px;
     width: 568px;
-    height: 385px;
+    height: 405px;
     -o-object-fit: cover;
     object-fit: cover;
     border-radius: 4px;

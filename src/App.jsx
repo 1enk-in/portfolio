@@ -59,13 +59,13 @@ function App() {
 }, []);
 
   const socialLinks = [
-    { icon: <FaInstagram />, url: 'https://instagram.com/not.so.naved' },
-    { icon: <FaTwitter />, url: 'https://twitter.com/Navedk39' },
-    { icon: <FaGithub />, url: 'https://github.com/Navedkhan05' },
-    { icon: <FaTelegram />, url: 'https://t.me/anpadbihari' },
-    { icon: <FaEnvelope />, url: 'mailto:naved3841@gmail.com' },
+    { icon: <FaInstagram />, url: 'https://instagram.com/_ziaf_11' },
+    { icon: <FaTwitter />, url: 'https://twitter.com/Ziaf_11' },
+    { icon: <FaGithub />, url: 'https://github.com/Faizkhan011' },
+    { icon: <FaTelegram />, url: 'https://t.me/Ziaf11' },
+    { icon: <FaEnvelope />, url: 'mailto:faizkhan3044@gmail.com' },
     { icon: <FaLink />, url: 'https://linktr.ee/navved' },
-    { icon: <FaLinkedin />, url: 'https://www.linkedin.com/in/naved-khan-7a364620a' },
+    { icon: <FaLinkedin />, url: 'https://www.linkedin.com/in/faiz-khan-2b757b306' },
   ];
   
 
@@ -76,7 +76,7 @@ function App() {
       <header className="site-header">
         <h1 className="custom-heading3 text-gray-900 dark:text-white">
           <a href="#home" className="no-underline text-inherit">
-            Naved Khan
+            Faiz Khan
           </a>
         </h1>
         <nav className="headerbar space-x-4 text-sm md:text-base">
@@ -109,16 +109,15 @@ function App() {
           <div className="typing-position">
             <RainbowTyping />
           </div>
-          <h1 className="custom-heading text-gray-900 dark:text-white">Naved Khan</h1>
+          <h1 className="custom-heading text-gray-900 dark:text-white">Faiz Khan</h1>
           <h1 className="custom-heading2 text-gray-900 dark:text-white">
-            Always learning, being creative and playing around with AI models <br />
-            to build something cool!
+            Always learning about finance, improving my skills, and using my <br/>knowledge to do something meaningful.
           </h1>
 
           <a
-            href="https://docs.google.com/document/d/162O-rq67m9sLyYa3Y0lXjyy9vWIZPgdTLfbXwKsR5ZY/edit?usp=sharing"
+            href="https://drive.google.com/file/d/1gb8HsjDQdOfAVWaQdIQMjNdNi1ueGULP/view"
             download
-            className="custom-heading4 text-gray-900 dark:text-white transition duration-300"
+            className="custom-heading4 text-gray-900 dark:text-white transition duration-300" target="_blank" rel="noopener noreferrer"
           >
             Download CV
           </a>
@@ -175,7 +174,7 @@ function App() {
         <span className="highlight3-location">Mumbai, Bhandup</span>
       </p>
           <p className="mb-2">
-        <span className="highlight3-program">Bachelor of Accounting and Finance (BAF)</span>
+        <span className="highlight3-program">Bachelor of Accounting and Finance (BAF) - CGPA 8.57</span>
       </p>
         </div>
       </div>
@@ -209,7 +208,7 @@ function App() {
         </div>
       </div>
       <p className="mb-2">
-        <span className="highlight2-program">Junior College (Commerce) - Maharashtra HSC Board (Scored 78% in HSC board exams)</span>
+        <span className="highlight2-program">Junior College (Commerce) - Maharashtra HSC Board (Scored 73.33% in HSC board exams)</span>
       </p>
         <p className="highlight2-subs mb-2 font-semibold">Strengths & Subjects:</p>
       <ul className="list-disc2 pl-5 space-y-1">
@@ -235,7 +234,7 @@ function App() {
         <span className="highlight-location">Mumbai, Vikhroli</span>
       </p>
       <p className="mb-2">
-        <span className="highlight-program">Primary and Secondary Education (70% in SSC Board Exams)</span>
+        <span className="highlight-program">Primary and Secondary Education (66% in SSC Board Exams)</span>
       </p>
       
       <p className="highlight-subs mb-2 font-semibold">Strong Subjects:</p>

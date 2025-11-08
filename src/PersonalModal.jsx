@@ -125,13 +125,13 @@ const PersonalModal = () => {
 
               <div className="personal-intro">
                 <h1>Hello again?</h1>
-                <p>My nickname is <span className="highlight">1enk</span></p>
-                <p><span className="highlight">1enk</span> is Modest</p>
+                <p>My nickname is <span className="highlight">Ziaf</span></p>
+                <p><span className="highlight">Ziaf</span> is Modest</p>
                 <p>Built this website with love</p>
               </div>
 
               <div className="personal-hobbies">
-                <h2>1enk's Hobbies</h2>
+                <h2>Ziaf's Hobbies</h2>
                 {/* <section className="hobby-block">
                   <h3>Morning Run</h3>
                   <p>Running gives me peace (⊗`◟´⊗), plus fitness & swimming.</p>
@@ -166,7 +166,7 @@ const PersonalModal = () => {
 
               {/* Slider Section */}
               <div className="slider-section">
-                <h2>Components of 1enk's Life</h2>
+                <h2>Components of Ziaf's Life</h2>
                 <Swiper
                   slidesPerView={2}
                   spaceBetween={15}
