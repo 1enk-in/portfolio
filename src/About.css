@@ -166,7 +166,7 @@
   .about-container {
     flex-direction: row;
     justify-content: center;
-    gap: 4rem;
+    gap: 2rem;
   }
 
   .about-text-box {
